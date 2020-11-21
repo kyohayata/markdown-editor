@@ -1,6 +1,28 @@
 <!doctype html>
 <html lang="ja">
 <head>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyDDFbNmtqVjzF6VWbb4DlYAkSfs3_vdnwY",
+      authDomain: "markdown-editor-83df5.firebaseapp.com",
+      databaseURL: "https://markdown-editor-83df5.firebaseio.com",
+      projectId: "markdown-editor-83df5",
+      storageBucket: "markdown-editor-83df5.appspot.com",
+      messagingSenderId: "897122050056",
+      appId: "1:897122050056:web:50c6e217856f7d2a37f1bd",
+      measurementId: "G-312390CJ3F"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
   <title>Markdown Editor</title>
 </head>
 <body>

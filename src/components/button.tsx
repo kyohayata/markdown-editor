@@ -17,14 +17,15 @@ const StyledButton = styled.button`
     color: gray;
   }
 `
-interface Props{
-    cancel?: boolean
-    children:string
-    onClick:() => void
+
+interface Props {
+  cancel?:boolean
+  children: string
+  onClick: () => void
 }
 
-export const Button:React.FC<Props> = (props) => (
-    <StyledButton onClick={props.onClick} className={props.cancel ? 'cancel' : ''}>
-      {props.children}
-    </StyledButton>
+export const Button: React.FC<Props> = (props) => (
+  <StyledButton onClick={props.onClick} className={props.cancel?'cancel':''}>
+    {props.children}
+  </StyledButton>
 )
